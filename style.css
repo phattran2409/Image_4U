@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto; 
+
+}
+h1 { 
+  margin: 0;
+  padding: 20px;
+  float: left;
+    
+  }
+.Logo {
+  font-size: 50px;
+  color: #444;
+} 
+
+header {
+  background:linear-gradient(to right, rgba(124,532,524,0.4),#55d6aa) ;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+  padding: 20px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.Logo:hover {
+  color: #000;
+}
+.Logo::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: relative;
+  top: 0;
+  width: 0%;
+  
+  transition: all ease-in-out 250ms;
+}
+.Logo:hover::before {
+  width: 100%;
+}
+
+
+#portfolio {
+  padding: 50px 0; 
+
+}
+.sub-title {
+
+  --s: 0.1em;   /* the thickness of the line */
+  --c: #b300b3; /* the color */
+
+  color: #ff004f;
+  padding-bottom: var(--s); 
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+.sub-title:hover {
+  --_p: 100%
+}
+
+.work-lists {
+  display: flex;  
+  margin-top: 30px;
+  margin-left: -20px;
+  margin-right: -20px;
+  float: left;
+ 
+}
+
+.work-lists .work-item {
+  width: 33.33333%;
+  padding: 0 20px;
+
+}
+
+.work-item  .work-content .work-layer {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.5s;
+ 
+}
+
+.work-item .work-content .work-layer:hover {
+  transform: scale(1.05);
+}
+
+.work-content .work-layer img {
+  width: 100%;
+  height: 650px;
+  border-radius: 20px;
+}
+
+.work-content .work-layer .layer {
+  width: auto;
+  height: 0;
+  background: linear-gradient(rgba(128, 124, 124, 0.401),#ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;  
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 40px;
+  font-size: 1.4rem;
+  transition: 0.5s;
+
+  box-shadow: rgba(212, 208, 208, 0.3)  0px 19px 38px, rgba(231, 227, 227, 0.22) 0px 15px 12px;
+}
+
+.work-content .work-layer:hover .layer {
+  height: 100%;
+}
+
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 0px;
+  font-family: "Poppins";
+  color: #fff;
+}
+
+.layer a {
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #ff004f;
+
+  
+}
+.layer i {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 50px;
+  
+
+ 
+}
+.layer i .detail-infor {
+  height: 0;
+  position: absolute;
+  left: 125px;
+  bottom: 10px;
+  overflow: hidden;
+  display: flex;
+  background-color:rgb(202, 190, 190);
+  color: #000;
+
+
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  text-align: center;
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding: 0 40px;
+  font-size: 0.7rem;
+  line-height: 20px;
+
+
+  
+  width: 50px;
+  transition: 0.5s;
+
+}
+.layer .Small-box .detail-infor{
+  /* box-shadow : offset-x || offset-y || offset blur  */
+  box-shadow: 6px 12px 10px 2px     rgb(68, 46, 46);
+  font-family: "Poppins";
+  
+}
+.layer .box-icon i {
+    border-radius: 50%;
+    box-shadow: 2px 5px 10px 2px rgb(6, 6, 6);
+}
+.layer i:hover .detail-infor {
+  height: 100px;
+  
+}
+
+
+
+
