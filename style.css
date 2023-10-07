@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
 	margin: 0;
 	background: #222;
@@ -9,6 +14,7 @@ body {
 .container {
 	width: 80%;
 	margin: 0 auto; 
+
 
 }
 h1 { 
@@ -22,7 +28,8 @@ h1 {
   color: #444;
 } 
 #header {
- 
+  /* height: 100vh;
+  width: 100%; */
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -39,29 +46,32 @@ header::after {
 }
 
 nav {
+  display: flex;
   float: right;
-  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+  /* padding-left: 35rem; */
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
-nav li {
+
+nav ul li {
   display: inline-block;
   margin-left: 70px;
   padding-top: 23px;
-
-  position: relative;
+  list-style-type: none;
+  margin: 10px 20px;
+  
 }
 
-nav a {
+nav ul li a {
   color: #444;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1rem;
+  position: relative;
+  
 }
 
 nav a:hover {
@@ -72,14 +82,16 @@ nav .fa-solid {
 }
 
 nav a::before {
-  content: '';
+  content: "";
   display: block;
-  height: 5px;
+  height: 2px;
   background-color: #444;
 
   position: absolute;
-  top: 0;
+  /**/
+  top: 0; 
   width: 0%;
+
 
   transition: all ease-in-out 250ms;
 }
@@ -215,11 +227,12 @@ nav a:hover::before {
 
  
 }
-.layer i .detail-infor {
+.layer i .Small-box .detail-infor {
+  margin-left: 9rem;
   height: 0;
   position: absolute;
-  left: 125px;
-  bottom: 10px;
+  left: 0;
+  bottom: 0;
   overflow: hidden;
   display: flex;
   background-color:rgb(202, 190, 190);
@@ -228,13 +241,12 @@ nav a:hover::before {
 
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
   text-align: center;
-  border-radius: 30px;
-  text-transform: uppercase;
+  border-radius: 30px;  
   padding: 0 40px;
   font-size: 0.7rem;
   line-height: 20px;
+  flex-direction: column;
 
 
   
@@ -246,7 +258,7 @@ nav a:hover::before {
   /* box-shadow : offset-x || offset-y || offset blur  */
   box-shadow: 6px 12px 10px 2px     rgb(68, 46, 46);
   font-family: "Poppins";
-  
+
 }
 .layer .box-icon i {
     border-radius: 50%;
@@ -256,7 +268,146 @@ nav a:hover::before {
   height: 100px;
   
 }
+/*---Section---- */
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  overflow: hidden;
+  background: #2f2f2f;
+}
 
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #2f2f2f;
+  gap: 30px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.28) 0%, 
+    rgba(255,255,255,0) 100%
+  );
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  width: min(900px , 100%);
+  box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12); 
+  z-index: 1;
+}
+/* Text */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  padding: 0 35px;
+  text-align: justify;
+}
 
+.info p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.picture-night {
+  background: linear-gradient(225deg,#ed276d 0%,#784ba050 50%,#2b86c5 100%  );
+}
 
+/* button join */
+.btn {
 
+  display: block;
+  padding: 10px 40px;
+  /*Font of button */
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color :#47045c;   
+
+  background:rgba(255, 255, 255, 0.9); 
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.401);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+} 
+.btn:hover, .btn:focus, .btn:active , .btn:visited {
+  transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+  animation: gelatine 0.5s 1;
+}
+/* Set Keyframes de hoat dong  */
+@keyframes gelatine {
+  
+  0%, 100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+/* Swiper */ 
+.swiper {
+  width: 250px;
+  height:450px;
+  padding: 50px 0 ;
+}
+.swiper-slide {
+  position: relative;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;
+}
+
+.swiper-slide span{
+  position: absolute; 
+  /*set up vi tri cho the span  */
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: 7px 18px;
+  margin: 10px;
+
+  border-radius: 20px;
+
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: inherit;
+
+  background: rgba(255,255,255,0.095);
+  box-shadow: inset 2.01px -2.01px 20px rgba(0,0,0,0.4), inset -3.0px 3.0px 3.0px rgba(255, 255, 255,0.34);
+  backdrop-filter: blur(74px);
+
+}
+.swiper-slide h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color:#fff; 
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4; 
+  margin: 0 0 20px 20px;
+}
+
+.swiper-slide:nth-child(1n) {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("https://github.com/phattran2409/Image_4U/blob/main/assets/Image/oil_painting1.jpg?raw=true")
+      no-repeat 50% 50% / cover;
+}
+.swiper-slide:nth-child(2n) {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/b6f5eb64-887c-43b1-aaba-d52a4c59a379")
+      no-repeat 50% 50% / cover;
+}

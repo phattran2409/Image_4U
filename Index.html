@@ -7,29 +7,107 @@
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="Reponsive.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <title>Document</title>
 </head>
 <body>
     <header>    
         <div id="header">
             <div class="container">
-                <h1 class="Logo">i4U</h1>
-    
+                <h1 class="Logo">i4U</h1>  
                 <nav>
-                    <ul>
-                       <li><a href="#">Home</a></li>
+                <ul id="sidemenu">
+                       <li><a href="home.html">Home</a></li>
                        <li><a href="#">About</a></li>
                        <li><a href="#">Donate</a></li>
                        <li><a href="#">Contact</a></li>
                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                     
-                    </ul>
-                    <i class="fa-solid fa-xmark" onclick="openMenu()"></i>
+                </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
                 </nav>
             </div>
            
         </div>
     </header>
+    
+<section>
+    <div class="content">
+        <div class="info">
+            <p>Join us for a fantatics <span class="picture-night">Picture Night </span>filled with popcorn, laughter, and great company! Whether you're a fan of thrilling action, heartwarming dramas, or side-splitting comedies, we've got a film lineup to cater to all tastes. Save the date and bring your favorite snacks to make it a memorable evening.</p>
+            <button class="btn">Join</button>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide">
+                <span>8.5</span>
+                <div>
+                  <h2>The Queen's Gambit</h2>
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <span>9.5</span>
+                <div>
+                  <h2>Breaking Bad</h2>
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <span>8.1</span>
+                <div>
+                  <h2>Wednesday</h2>
+                </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <span>8.7</span>
+                <div>
+                  <h2>Stranger Things</h2>
+                </div>
+            </div>
+              
+            <div class="swiper-slide">
+                <span>8.6</span>
+                <div>
+                  <h2>Anne with an E</h2>
+                </div>
+            </div>
+              
+            <div class="swiper-slide">
+                <span>8.9</span>
+                <div>
+                  <h2>Friends</h2>
+                </div>
+            </div>
+              
+             <div class="swiper-slide">
+                <span>8.6</span>
+                <div>
+                  <h2>The Crown</h2>
+                </div>
+            </div>
+              
+              <div class="swiper-slide">
+                <span>8.7</span>
+                <div>
+                  <h2>House M.D.</h2>
+                </div>
+            </div>
+              
+              <div class="swiper-slide">
+                <span>9.2</span>
+                <div>
+                  <h2>Game of Thrones</h2>
+                </div>
+              </div>
+          </div>
+        </div>
+</section>
+
+
 
     <!-- portofio -->
     <div id="portfolio">
@@ -185,5 +263,32 @@
         </div>
     </div>
     
+
+    
+    <script>
+        var sideMenu = document.getElementById("sidemenu");
+
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+            var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        initialSlide: 2,
+        loop: true,
+        rotate: true,
+        mousewheel: {
+        invert: false,
+    },
+    });
+    </script>
+
 </body>
 </html>
