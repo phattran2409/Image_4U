@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b2a2a;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav {
+    background: linear-gradient(to right top,
+            #d16ba5,
+            #c777b9,
+            #ba83ca,
+            #aa8fd8,
+            #9a9ae1,
+            #8aa7ec,
+            #79b3f4,
+            #69bff8,
+            #52cffe,
+            #41dfff,
+            #46eefa,
+            #5ffbf1);
+    box-shadow: 1px 2px 10px #d16ba5;
+
+}
+
+.navbar-nav {
+    display: flex;
+    padding-right: 100px;
+
+}
+
+.navbar-brand {
+    font-size: 45px;
+    font-weight: 800;
+
+}
+
+/* Color logo */
+.navbar-light .navbar-brand {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-item {
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+/* color navbar item like home donate contact ...etc  */
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
+
+.dropdown-item {
+    background: linear-gradient(to right top,
+            #d16ba5,
+            #c777b9,
+            #ba83ca,
+            #aa8fd8,
+            #9a9ae1,
+            #8aa7ec,
+            #79b3f4,
+            #69bff8,
+            #52cffe,
+            #41dfff,
+            #46eefa,
+            #5ffbf1);
+    font-weight: 500;
+    color: #fff;
+
+}
+.card-group {
+    display:flex; 
+    justify-content: space-between;
+   
+}
+
+
+.card-img-top { 
+    width: 100%;
+
+}
+/* padding  */
+.card-body {
+    padding: 0;
+    height: 100%;
+    
+}
+
+
+.card-body  .card-text  {
+    position: absolute;
+    height: 0;
+    background: linear-gradient(to bottom right, #FF3E9D, #0E1F40);
+    bottom: 0;
+    /*không bị lộ phần trắng*/
+    margin-bottom: 0px;
+    overflow: hidden;
+    font-family: "Poppins";
+    text-align: center;
+    transition: 0.5s;
+    
+}
+.card-body a i { 
+    position: absolute;
+    height: 0;
+    bottom: 0;
+    overflow:hidden;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    
+   
+}
+.card-title {
+    position: relative; 
+    padding: 10px; 
+    transition: 0.5s;
+  
+    
+}
+.card:hover {
+    transform: scale(1.05);
+
+}
+.card:hover .card-title {
+    height: 100%;
+}
+.card:hover  .card-text{
+    height: 100%;
+    padding: 1em;
+    
+
+} 
+.card:hover a i {
+    height: 100%;
+   
+    
+}

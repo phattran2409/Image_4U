@@ -40,5 +40,18 @@
     .sub-title {
         font-size: 4rem;
     }
-  
+    .container .work-item{
+        display: grid;
+        grid-template-columns: repeat(auto-fit);
+        gap: 100px;
+
+    }
+    .container .work-item {
+        height: 100%;
+        width: 100%;
+    }
+
+    .work-lists {
+        flex-direction: column;
+    }
 }
