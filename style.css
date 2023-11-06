@@ -243,10 +243,10 @@ nav a:hover::before {
 .layer h3 {
   font-size: 1em;
   /* transform: translateY(-30%); */
-  font-weight: 500;
+  font-weight: 800;
   margin-bottom: 0px;
   font-family: "Poppins";
-  color: #fff;
+  color: #F4BF96;
 }
 
 .layer a {
@@ -259,6 +259,12 @@ nav a:hover::before {
   background-color: #fff;
   color: #ff004f;
 
+}
+.layer p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 200;
 }
 
 .layer i {
@@ -306,6 +312,26 @@ nav a:hover::before {
   height: 50px;
 }
 
+ /* ---  button see more ----- */
+.btn-see-more {
+  background: none;
+  display: block;
+  margin: 50px auto;
+  padding: 1rem 2rem; 
+  width: fit-content;
+  border: 1px solid #DF1C44;
+  text-decoration: none;
+  border-radius:10px ;
+  color:#9e0f0a;
+  font-weight:800;
+  
+  transition: background-color linear 0.5s;
+
+}
+.btn-see-more:hover {
+  background:linear-gradient(163deg,#E95793, #5272F2) ;
+  color: #fff;
+}
 /*---Section---- */
 section {
   position: relative;
@@ -358,7 +384,7 @@ section {
 }
 
 /* button join */
-.btn1 {
+.btn1 a { 
 
   display: block;
   padding: 10px 40px;
@@ -384,6 +410,11 @@ section {
 .btn1:visited {
   transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
   animation: gelatine 0.5s 1;
+}
+.btn1 a:hover {
+  background:linear-gradient(165deg, #FBECB2 0%,#F8BDEB 35%, rgba(4, 186, 244, 1) 100%);
+  color: #fff;
+  border: none;
 }
 /* button submit */
 .btn:hover,

@@ -35,6 +35,23 @@ nav {
 
 }
 
+.title {
+    --s: 0.1em;
+    --c: #b300b3;
+    
+    padding-bottom: var(--s);
+        background:
+            linear-gradient(90deg, var(--c) 50%, #fff 0) calc(100% - var(--_p, 0%))/200% 100%,
+            linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+        -webkit-background-clip: text, padding-box;
+        background-clip: text, padding-box;
+        -webkit-text-fill-color: transparent;
+        transition: 0.5s;
+}
+.title:hover {
+    --_p: 20%
+}
+
 .navbar-nav {
     display: flex;
     padding-right: 100px;
@@ -44,7 +61,21 @@ nav {
 .navbar-brand {
     font-size: 45px;
     font-weight: 800;
+    --s: 0.1em;
+        --c: #610C9F;
+        --c2: #940B92;
+        padding-bottom: var(--s);
+        background:
+            linear-gradient(90deg, var(--c) 50%, #fff 0) calc(100% - var(--_p, 0%))/200% 100%,
+            linear-gradient(var(--c2) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+        -webkit-background-clip: text, padding-box;
+        background-clip: text, padding-box;
+        -webkit-text-fill-color: transparent;
+        transition: 0.5s;
 
+}
+.navbar-brand:hover {
+    --_p:100%;
 }
 
 /* Color logo */
@@ -56,7 +87,22 @@ nav {
     padding: 0 20px;
     font-weight: 500;
 }
-
+.nav-item {
+    --s: 0.1em;
+        --c: #400640;
+    
+        padding-bottom: var(--s);
+        background:
+            linear-gradient(90deg, var(--c) 50%, #fff 0) calc(100% - var(--_p, 0%))/200% 100%,
+            linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+        -webkit-background-clip: text, padding-box;
+        background-clip: text, padding-box;
+        -webkit-text-fill-color: transparent;
+        transition: 0.5s;
+}
+.nav-item:hover {
+    --_p: 100%;
+}
 /* color navbar item like home donate contact ...etc  */
 .navbar-nav .nav-item .nav-link {
     color: #fff;
@@ -83,12 +129,16 @@ nav {
 .card-group {
     display:flex; 
     justify-content: space-between;
+    padding-bottom: 3rem;
+  
    
 }
 
 
 .card-img-top { 
     width: 100%;
+    height: 500px;
+    border-radius: 20px;
 
 }
 /* padding  */
@@ -99,7 +149,7 @@ nav {
 }
 
 
-.card-body  .card-text  {
+.card-body  .card-text {
     position: absolute;
     height: 0;
     background: linear-gradient(to bottom right, #FF3E9D, #0E1F40);
@@ -112,19 +162,39 @@ nav {
     transition: 0.5s;
     
 }
-.card-body a i { 
-    position: absolute;
-    height: 0;
-    bottom: 0;
-    overflow:hidden;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding-top: 10rem;
+/* Read more */
+.box-infor {
+    /* position: absolute; */
+    /* height: 0px;
+    bottom: 0; 
+    overflow: hidden;
     
-   
+    width: 100%;
+   */
+    
+    
+
 }
+.box-infor a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 1rem;
+    text-decoration: none;
+    display: none;
+    flex-direction: column;
+  
+    border-radius:10px;
+    color: #5ffbf1;
+    transition: backgroud-color linear 5s;
+}
+.box-infor a i {
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+
+
 .card-title {
     position: relative; 
     padding: 10px; 
@@ -137,16 +207,27 @@ nav {
 
 }
 .card:hover .card-title {
-    height: 100%;
+    /* height: 100%; */
 }
 .card:hover  .card-text{
     height: 100%;
     padding: 1em;
-    
-
 } 
-.card:hover a i {
-    height: 100%;
+
+.card:hover .box-infor a {
    
+    height: 50%;
+    display: flex;
+    margin-left: 25%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
     
+}
+.box-infor:hover a {
+    border: 1px solid red;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 20px;
+
 }
