@@ -80,7 +80,7 @@
                 trạng tĩnh lặng và tầm nhìn xa cùng với ánh sáng mặt trời chiếu xuống tạo nên một bức tranh đẹp và lôi
                 cuốn.
               <div class="box-infor ">
-                <a class="see_more" href="#"><i class="fa-solid fa-circle-info px-3"></i>Read more</a>
+                <a class="see_more" href="https://www.facebook.com/photo/?fbid=122116712390061223&set=a.122113810652061223"><i class="fa-solid fa-circle-info px-3"></i>Read more</a>
               </div>
 
 
@@ -116,7 +116,7 @@
                 màu vàng kém mạnh mẽ hơn.
               </p>
               <div class="box-infor ">
-                <a class="see_more" href="#"><i class="fa-solid fa-circle-info px-3"></i>Read more</a>
+                <a class="see_more" href="https://www.facebook.com/photo?fbid=122119053914061223&set=pcb.122119056782061223"><i class="fa-solid fa-circle-info px-3"></i>Read more</a>
               </div>
             </div>
           </div>
@@ -151,7 +151,7 @@
                 sĩ.
               </p>
               <div class="box-infor ">
-                <a class="see_more" href="#"><i class="fa-solid fa-circle-info px-3"></i>Read more</a>
+                <a class="see_more" href="https://www.facebook.com/photo?fbid=122119053956061223&set=pcb.122119056782061223"><i class="fa-solid fa-circle-info px-3"></i>Read more</a>
               </div>
             </div>
           </div>
@@ -278,17 +278,60 @@
       </div>
     </div>
 
-    <button class="btn btn-danger center-block loadmore">
+    <!-- <button class="btn btn-danger center-block loadmore">
       <span class="spinner-border spinner-border-sm " role="status" aria-hidden="true"></span> Load more
-    </button>
+    </button> -->
+    
+      <button class="btn btn-process loadmore center-block">
+        Load more
+        <span class="btn-ring"></span>
+      </button>
 
-
-    <button class="btn-2 center-block loadless">Load less</button>
-
-
-
+      <button class="btn-2 btn-process loadless center-block">
+        Load less
+        <span class="btn-ring btn-less"></span>
+      </button>
+      
   </section>
 
+  <!-- footer  -->
+<footer class=" text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+
+    <!-- Facebook -->
+    <a class="btn1 btn-outline-light btn-floating my-4 mx-3"
+      href="https://www.facebook.com/profile.php?id=61551836716878" role="button"><i class="fab fa-facebook-f"></i></a>
+
+    <!-- Twitter -->
+    <a class="btn1 btn-outline-light btn-floating my-4 mx-3" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+    <!-- Google -->
+    <a class="btn1 btn-outline-light btn-floating my-4 mx-3" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+    <!-- Instagram -->
+    <a class="btn1 btn-outline-light btn-floating my-5 mx-3" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+    <!-- Linkedin -->
+    <a class="btn1 btn-outline-light btn-floating my-4 mx-3" href="#!" role="button"><i
+        class="fab fa-linkedin-in"></i></a>
+
+    <!-- Github -->
+    <a class="btn1 btn-outline-light btn-floating my-4 mx-3" href="#!" role="button"><i class="fab fa-github"></i></a>
+
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3 style=" background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white " href="home.html" style="text-decoration: none;">Image4U right reserved</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -304,22 +347,34 @@
 
 
     $(".loadmore").on("click", function () {
-      $(".col-xs-4:hidden").slice(0, 3).show(500);
+      $(".col-xs-4:hidden").slice(0, 3).show(800);
       if ($(".col-xs-4:hidden").length == 0) {
         // hide button load more
         // show load less   
-
-        $(".loadmore").fadeOut();
         $(".loadless").fadeIn();
       }
     })
 
     $(".loadless").on("click", function () {
-      $(".col-xs-4:last-child").hide();
+      $(".col-xs-4:nth-last-child(-n+4)").hide();
+      if($(".col-xs-4:hidden").length !=0) {
+        $(".loadless").fadeOut();
+      }
     })
+   
 
-    console.log($(".col-xs-4:last-child"));
+    // console.log($(".col-xs-4:nth-last-child"));
+    
+      $('.btn-process').on('click', function () {
+          $(".btn-ring").show();
+          $(".btn-process").prop('disabled', true);
+          $(".btn-process").val('disabled');
+          setTimeout(function () {
+            $(".btn-ring").hide();
+            $(".btn-process").prop('disabled', false);
+          }, 800);
+        });
 
   </script>
-
+</body>
 </html>

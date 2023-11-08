@@ -242,13 +242,18 @@ nav {
 
 }
 .btn-2 {
+    font-size: 1rem;
     padding:20px;
     border-radius: 20px;
     font-family: "Poppins";
     cursor: pointer;
     box-shadow: 1px 5px #999;
-    background: #B0A695;
+    background: #d89522;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 }
 .btn-2:hover {
@@ -263,4 +268,61 @@ nav {
 .col-xs-4{
     display: none;    
     margin: 2rem;
+}
+/*button loader */
+.btn {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    background: #d89522;
+    color: #2b2a2a;
+
+    box-shadow: 1px 5px 0px #d1cfcf ;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 0.5rem; */
+    /* padding: 1rem 3rem; */
+    padding:20px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{ 
+    background: #EBE3D5;
+}
+
+.btn:active{
+    background: #EBE3D5;
+    box-shadow: 1px 2px 0 #222121;
+    transform: translateY(7px);
+}
+
+.btn-ring {
+    display: none;
+}
+.btn-less {
+    
+}
+.btn-ring:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: ring 1.2s linear infinite;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
