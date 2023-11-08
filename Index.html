@@ -1,302 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'><link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="Reponsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Home</title>
 </head>
-
 <body>
-    <header>
+    <header>    
         <div id="header">
             <div class="container">
-                <h1 class="Logo"><a href="Index.html">i4U</a></h1>
+                <h1 class="Logo"><a href="#">i4U</a></h1>  
                 <nav>
-                    <ul id="sidemenu">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About </a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-
-                    </ul>
+                <ul id="sidemenu">
+                       <li><a href="home.html">Home</a></li>
+                       <li><a href="about.html">About</a></li>
+                       <li><a href="#">Donate</a></li>
+                       <li><a href="#">Contact</a></li>
+                       <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    
+                </ul>
                     <i class="fa-solid fa-bars" onclick="openMenu()"></i>
                 </nav>
             </div>
-
+           
         </div>
     </header>
 
-    <!-- portofio -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">Oil-Painting</h1>
-            <div class="work-lists">
-                <div class="work-item">
-                    <div class="work-content">
-                        <div class="work-layer">
-                            <img src="./assets/Image/Oil-Art2.jpg" alt="">
-                            <div class="layer">
-                                <h3>Arnolfini Portrait (1434)</h3>
-                                <h3> Artis: Jan van Eyck (1390 – 1441)</h3>
-                                <p>
-                                    Chân dung Arnolfini là tác phẩm tranh sơn dầu trên tấm vẽ gỗ sồi năm 1434 của họa sĩ 𝗝𝗮𝗻 𝘃𝗮𝗻 𝗘𝘆𝗰𝗸. Bức tranh
-                                    được vẽ theo phong cách hiện thực, với những chi tiết tinh xảo và tỉ mỉ. Người đàn ông trong tranh, được cho là Giovanni
-                                    Arnolfini, đang nắm tay người phụ nữ, được cho là vợ của ông, Giovanna Cenami. Họ đang đứng trong một căn phòng có nội
-                                    thất sang trọng, với một chiếc gương lớn phản chiếu lại hình ảnh của họ.
-                                </p>
-                                <a href="#" class="fa-solid fa-arrow-up-right-from-square"></a>
-                                <div class="box-icon">
-                                    <i class="fa-solid fa-circle-info ">
-                                        <div class="Small-box">
-                                            <a class="detail-infor"
-                                                href="https://www.facebook.com/photo?fbid=122120777588061223&set=a.122113810652061223">more
-                                                informattion
-                                            </a>
-                                        </div>
-                                    </i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section>
+        <div class="content">
+          <div class="info">
+            <p>Discover and learn about the art of oil painting at <span class="picture-night">Image4U</span>. Image4U is a unique and diverse source of information about various types of oil paintings, bringing you into the
+            colorful and talented world of artists Our website introduces you to the history, styles, and even the exceptional artists who have created these special
+            artworks. You will have the opportunity to learn about the stories behind the artworks, the lives, and careers of those
+            who have made a significant impact in the world of oil painting.</p>
+            <button class="btn1" ><a href="index.html">Join</a></button>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide">
+                <span>1</span>
+                <div>
+                  <h2>Grant Wood </h2>
                 </div>
-                <div class="work-item">
-                    <div class="work-content">
-                        <div class="work-layer">
-                            <img src="./assets/Image/Oil-Painting-on-Canvas.jpg " alt="">
-                            <div class="layer">
-                                <h3> 𝗟𝗮𝗱𝘆 𝘄𝗶𝘁𝗵 𝗮𝗻 𝗘𝗿𝗺𝗶𝗻𝗲 (1489–1490) </h3>
-                                <h3>Artis : Leonardo di ser Piero da Vinci (1452 – 1519)</h3>
-                                <p>
-                                    Bức chân dung mô tả một phụ nữ trẻ có vẻ đẹp tuyệt vời và sang trọng, đang ôm một con ermine trên tay. Con chồn là biểu
-                                    tượng được đánh giá cao về sự thuần khiết và cao quý trong thời kỳ Phục hưng, và việc đưa nó vào bức tranh cho thấy
-                                    người phụ nữ có địa vị xã hội cao.
-                                </p>
-                                <a href="#" class="fa-solid fa-arrow-up-right-from-square"></a>
-                                <div class="box-icon">
-                                    <i class="fa-solid fa-circle-info ">
-                                        <div class="Small-box">
-                                            <a class="detail-infor"
-                                                href="https://www.facebook.com/photo/?fbid=122120778566061223&set=a.122113810652061223">more
-                                                informattion</a>
-                                        </div>
-                                    </i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <span>2</span>
+                <div>
+                  <h2>Jan Vermeer</h2>
                 </div>
-                <div class="work-item">
-                    <div class="work-content">
-                        <div class="work-layer">
-                            <img src="./assets/Image/Famous-Oil-Art.jpg" alt="">
-                            <div class="layer">
-                                <h3>Las Meninas (1656)</h3>
-                                <h3>Artis : Diego Rodríguez de Silva y Velázquez (1599 – 1660)</h3>
-                                <p>
-                                Bức tranh là một trong những tác phẩm nghệ thuật được phân tích rộng rãi nhất trong hội họa phương Tây, nổi
-                                tiếng với cách bố cục phức tạp và ý nghĩa hàm súc.
-                                <br>
-                                Điểm đặc biệt của bức tranh là việc Velázquez tự vẽ mình trong bức tranh, đang đứng trước giá vẽ và nhìn về phía người
-                                xem. Điều này tạo ra một hiệu ứng tương tác giữa người xem và bức tranh, khiến người xem có cảm giác như đang ở trong
-                                cung điện
-                                </p>
-                                <a href="#" class="fa-solid fa-arrow-up-right-from-square"></a>
-                                <div class="box-icon">
-                                    <i class="fa-solid fa-circle-info ">
-                                        <div class="Small-box">
-                                            <a class="detail-infor"
-                                                href="https://www.facebook.com/photo?fbid=122120442854061223&set=a.122113810652061223">more
-                                                informattion</a>
-                                        </div>
-                                    </i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <span>3</span>
+                <div>
+                  <h2>Leonardo da Vinci</h2>
                 </div>
-                
-
-                <div class="clear"></div>
-            </div>
-            <!-- work-lists 1 -->
-            <div class="work-lists">
-                <div class="work-item">
-                    <div class="work-content">
-                        <div class="work-layer">
-                            <img src="assets/Image/PortraitofDr. Gachet.jpg" alt="">
-                            <div class="layer">
-                                <h3>Portrait of Dr. Gachet</h3>
-                                <h3>Artis: Vincent Van Gogh</h3>
-                                <p>Qui amet deserunt veniam nostrud ut qui.
-                                    Culpa laboris laboris sint labore amet fugiat fugiat occaecat reprehenderit nulla.
-                                </p>
-
-                                <a href="#" class="fa-solid fa-arrow-up-right-from-square"></a>
-                                <div class="box-icon">
-                                    <i class="fa-solid fa-circle-info ">
-                                        <div class="Small-box">
-                                            <a class="detail-infor"
-                                                href="https://vi.wikipedia.org/wiki/Vincent_van_Gogh">more
-                                                informattion</a>
-                                        </div>
-                                    </i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <div class="work-content">
-                        <div class="work-layer">
-                            <img src="assets/Image/self-portrait.jpg" alt="">
-                            <div class="layer">
-                                <h3>Van Gogh Self-portrait</h3>
-                                <h3>Artis: Vincent Van Gogh</h3>
-                                <p>Qui amet deserunt veniam nostrud ut qui.
-                                    Culpa laboris laboris sint labore amet fugiat fugiat occaecat reprehenderit nulla.
-                                </p>
-                                <a href="#" class="fa-solid fa-arrow-up-right-from-square"></a>
-                                <div class="box-icon">
-                                    <i class="fa-solid fa-circle-info ">
-                                        <div class="Small-box">
-                                            <a class="detail-infor"
-                                                href="https://vi.wikipedia.org/wiki/Vincent_van_Gogh">more
-                                                informattion</a>
-                                        </div>
-                                    </i>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <div class="work-content">
-                        <div class="work-layer">
-                            <img src="assets/Image/the-starry-night.jpg"">
-                            <div class=" layer">
-                            <h3>The Starry Night</h3>
-                            <h3>Artis : Vincent Van Gogh </h3>
-                            <p>Là nhân vật không còn xa lạ với những người quan tâm đến lĩnh vực mỹ thuật, <b style="color:#BEADFA; font-size: 1.5rem;">𝗩𝗶𝗻𝗰𝗲𝗻𝘁 𝘃𝗮𝗻 𝗚𝗼𝗴𝗵</b> (1853-1890)
-                            là một họa sĩ vĩ đại và nổi tiếng từ Hà Lan, nổi tiếng với những tác phẩm nghệ thuật sơn dầu đầy màu sắc và cảm xúc.
-                            Vangogh luôn sáng tạo và thử nghiệm với kỹ thuật và phong cách riêng của mình. Mặc dù ông qua đời trong hoàn cảnh đầy
-                            khó khăn, sáng tác của ông vẫn tiếp tục sống và truyền cảm hứng cho người hâm mộ trên khắp thế giới. Ông là biểu tượng
-                            của sự đam mê và tài năng, để lại dấu ấn sâu sắc trong lịch sử nghệ thuật hội họa.</p>
-
-                            <a href="#" class="fa-solid fa-arrow-up-right-from-square"></a>
-                            <div class="box-icon">
-                                <i class="fa-solid fa-circle-info ">
-                                    <div class="Small-box">
-                                        <a class="detail-infor"
-                                            href="https://www.facebook.com/photo?fbid=122113947752061223&set=a.122113810652061223">more informattion</a>
-                                    </div>
-                                </i>
-                            </div>
-                        </div>
-
-                    </div>
+              </div>
+      
+              <div class="swiper-slide">
+                <span>4</span>
+                <div>
+                  <h2>Vincent van Gogh</h2>
                 </div>
             </div>
-
-            <a href="./about.html" class="btn-see-more">see more</a>
+              
+            <div class="swiper-slide">
+                <span>5</span>
+                <div>
+                  <h2>Rembrandt van Rijn</h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <span>6</span>
+              <div>
+                <h2>Bùi Xuân Phái</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <span>7</span>
+              <div>
+                <h2>Nguyễn Gia Trí</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <span>8</span>
+              <div>
+                <h2>Artis Name </h2>
+              </div>
+            </div>
+              
+            
+          </div>
         </div>
-        <!--  -->
+      
+      </div>
+        
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
 
-    </div>
-    </div>
-
+<!--Contact -->
+<div class="contact bg-dark">
+  <div class="container ">
+      <div class="row">
+          <div class="contact-left">
+              <h1 class="sub-title">Contact me</h1>
+              <a href="mailto:haidao549@gmail.com"><i class="fa-solid fa-paper-plane"></i>Image4u@gmail.com</a> <br>
+              <a href="tel:+84 374756491"><i class="fa-solid fa-square-phone"></i>0374756491</a>
+              <div class="social-icons">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+          </div>
+          <div class="contact-right">
+              <form action="" name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your name" required>
+                  <input type="email" name="Email" placeholder="Your email" required>
+                  <textarea name="Message" rows="6" placeholder="Your message" required></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Footer -->
 <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-        <!-- Section: Social media -->
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating mx-4" href="https://www.facebook.com/profile.php?id=61551836716878" role="button"><i class="fab fa-facebook-f"></i></a>
 
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating my-4 mx-3" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating mx-4" href="www.facebook.com/profile.php?id=61551836716878" role="button"><i class="fab fa-twitter"></i></a>
 
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating my-4 mx-3" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating mx-4" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating my-4 mx-3"  href="#!" role="button"><i class="fab fa-google"></i></a>
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating mx-4" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating my-5 mx-3" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating mx-4" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
 
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating my-4 mx-3" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating mx-4" href="#!" role="button"><i class="fab fa-github"></i></a>
+    
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
 
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating my-4 mx-3" href="#!" role="button"><i class="fab fa-github"></i></a>
-
-        <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3 style=" background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-white " href="home.html" style="text-decoration: none;">My Website.All right reserved</a>
-    </div>
-    <!-- Copyright -->
+  <!-- Copyright -->
+  <div class="text-center p-3 style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white " href="home.html" style="text-decoration: none;">My Website.All right reserved</a>
+  </div>
+  <!-- Copyright -->
 </footer>
 
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script><script  src="./script.js"></script>
     <script>
-        var sideMenu = document.getElementById("sidemenu");
+      var sideMenu = document.getElementById("sidemenu");
 
-        function openMenu() {
-            sideMenu.style.right = "0";
-        }
+      function openMenu() {
+          sideMenu.style.right = "0";
+      }
 
-        function closeMenu() {
-            sideMenu.style.right = "-200px";
-        }
-    </script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            effect: "cards",
-            grabCursor: true,
-            initialSlide: 2,
-            loop: true,
-            rotate: true,
-            mousewheel: {
-                invert: false,
-            },
-        });
-    </script>
-    <!-- Boostrap 5 Js  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-
-        </script>
-    <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (e) {
-            if (!e.target.matches('.dropbtn')) {
-                var myDropdown = document.getElementById("myDropdown");
-                if (myDropdown.classList.contains('show')) {
-                    myDropdown.classList.remove('show');
-                }
-            }
-        }
-    </script>
+      function closeMenu() {
+          sideMenu.style.right = "-200px";
+      }
+  </script>
 </body>
-
 </html>
